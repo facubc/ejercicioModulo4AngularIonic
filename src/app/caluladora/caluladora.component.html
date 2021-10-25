@@ -1,0 +1,20 @@
+<app-cabecera></app-cabecera>
+
+<div class="conteiner">    
+    <form>        
+        <div>
+            <div>
+                <h3>CALCUADORA</h3>
+            </div>
+            <div class="input">                
+                <app-ingreso-data [etiqueta]='etiqueta' [tipo]='tipo' (valorIngresado)="valorUno($event)"></app-ingreso-data>        
+            </div>
+            <div class="input">                
+                <app-ingreso-data [etiqueta]='etiqueta' [tipo]='tipo' (valorIngresado)="valorDos($event)"></app-ingreso-data>    
+            </div>
+            <app-operaciones (tipoOperacion)="creaObjeto($event)"></app-operaciones>
+        </div>
+    </form>
+</div>
+
+

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ModeloOperacion } from './model/operacion';
+import { CalculosService } from './service/calculos.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'modulo4-angular';
+
+  constructor(
+    private calculoService: CalculosService,
+  ) {
+
+  }
+
+  mostrar(cuenta:ModeloOperacion) {
+    let resultado = this.calculoService.calcular(cuenta);
+    alert(resultado);
+  }
+  
 }

@@ -1,0 +1,17 @@
+.conteiner{
+    // border: solid 2px green;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.titulo{
+    // border: solid 2px green;
+    width: 100%;
+    font-size: 3em;    
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(44, 171, 230);
+    text-align: center;
+}
